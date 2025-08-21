@@ -1,0 +1,39 @@
+html {
+	font-size: 10px;
+	color: #484848;
+	font-family: "Segoe UI";
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	min-height: 100vh;
+}
+
+.custom {
+	&_navigator {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin: 15px 0;
+	}
+
+	&_search {
+		width: 300px;
+	}
+
+	&_input {
+		width: 100%;
+	}
+	&_table {
+		width: 100%;
+	}
+}
