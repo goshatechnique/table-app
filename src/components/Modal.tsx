@@ -30,6 +30,10 @@ function AppModal({ isOpen, title, editingRecord, onOk, onCancel, form }: IModal
 							pattern: /^[a-zA-Zа-яА-ЯёЁ\s]+$/,
 							message: "Please enter a valid name (letters only)",
 						},
+						{
+							max: 40,
+							message: "Name must be at most 40 characters",
+						},
 					]}
 				>
 					<Input className="custom_input" placeholder="Enter name" />
@@ -47,6 +51,10 @@ function AppModal({ isOpen, title, editingRecord, onOk, onCancel, form }: IModal
 						{
 							pattern: /^\d+$/,
 							message: "Please enter a valid number (digits only)",
+						},
+						{
+							max: 20,
+							message: "Number must be at most 20 characters",
 						},
 					]}
 				>
